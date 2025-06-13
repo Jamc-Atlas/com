@@ -1,0 +1,197 @@
+<html lang="es">
+ <head>
+  <link rel="icon" href="img/logo2.jpg">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Servientrega
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Scrollbar for timeline container */
+    .timeline-scroll::-webkit-scrollbar {
+      width: 8px;
+    }
+    .timeline-scroll::-webkit-scrollbar-thumb {
+      background-color: #a3d18a;
+      border-radius: 4px;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Header -->
+
+  <header class="flex items-center justify-between px-4 py-3 border-b border-gray-200">
+   <div class="flex items-center space-x-2">
+    <img alt="Logo con fondo verde y letra S blanca" class="w-10 h-10" height="40" src="img/logo1.ico" width="40"/>
+
+   </div>
+
+
+   <nav class="hidden md:flex space-x-6 text-xs font-semibold text-black">
+    <a class="hover:underline" href="#">
+     
+    </a>
+    <a class="hover:underline" href="#">
+     
+    </a>
+    <a class="hover:underline" href="#">
+     
+    </a>
+    <a class="hover:underline flex items-center gap-1" href="#">
+     
+     <span class="text-[10px] font-bold bg-[#3aaa35] text-white rounded px-1.5 py-[2px] leading-none">
+      
+     </span>
+    </a>
+    <a class="hover:underline" href="#">
+     
+    </a>
+    <a class="hover:underline" href="#">
+     
+    </a>
+    <a class="hover:underline flex items-center gap-1" href="#">
+     
+     
+     </i>
+    </a>
+   </nav>
+  </header>
+  <!-- Main content -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+   <h1 class="text-2xl font-extrabold text-gray-900 mb-1 text-center md:text-left" style="text-align: center;">
+    Rastreo de Envíos
+   </h1>
+   <p style="text-align: center;" class="text-center md:text-left mb-6 text-sm font-normal">
+    Guía :
+    <span  style="text-align: center;" class="font-normal">
+     9134647680
+    </span>
+   </p>
+   <!-- Form grid -->
+   <form autocomplete="off" class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3 max-w-4xl mx-auto mb-6">
+    <div class="space-y-1">
+     <label class="block text-xs font-normal text-gray-900 mb-0.5" for="fecha-envio">
+      Fecha envío:
+     </label>
+     <input disabled class="w-full rounded border border-gray-300 px-3 py-2 text-xs shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="fecha-envio" name="fecha-envio" type="date" value="2025-06-13"/>
+    </div>
+    <div class="space-y-1">
+     <label class="block text-xs font-normal text-gray-900 mb-0.5" for="estado-actual">
+      Estado Actual:
+     </label>
+     <input disabled class="w-full rounded border border-gray-300 px-3 py-2 text-xs shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="estado-actual" name="estado-actual" type="text" value="Servientrega CS11"/>
+    </div>
+    <div class="space-y-1">
+     <label class="block text-xs font-normal text-gray-900 mb-0.5" for="origen">
+      Origen:
+     </label>
+     <input disabled class="w-full rounded border border-gray-300 px-3 py-2 text-xs shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="origen" name="origen" type="text" value="RIOBAMBA"/>
+    </div>
+    <div class="space-y-1">
+     <label class="block text-xs font-normal text-gray-900 mb-0.5" for="destino">
+      Destino:
+     </label>
+     <input disabled class="w-full rounded border border-gray-300 px-3 py-2 text-xs shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="destino" name="destino" type="text" value="TENA"/>
+    </div>
+    <div class="space-y-1">
+     <label class="block text-xs font-bold text-gray-900 mb-0.5" for="recibido-por">
+      Recibido por:
+     </label>
+     <input disabled class="w-full rounded border border-gray-300 px-3 py-2 text-xs font-bold shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="recibido-por" name="recibido-por" type="text" value="JHON SUAREZ"/>
+    </div>
+    <div class="space-y-1">
+     <label class="block text-xs font-bold text-gray-900 mb-0.5" for="fecha-entrega">
+      Fecha entrega:
+     </label>
+     <input  disabled class=" w-full rounded border border-gray-300 px-3 py-2 text-xs font-bold shadow-[4px_4px_6px_rgba(163,209,138,0.5)] focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" id="fecha-entrega" name="fecha-entrega" type="text" value="2025-06-12 18:58:00"/>
+    </div>
+    <div class="col-span-1 md:col-span-2 flex gap-2 mt-2 max-w-4xl mx-auto">
+     <input aria-label="input para enviar imagen por correo" class="flex-grow rounded border border-[#3aaa35] px-3 py-2 text-xs focus:outline-none focus:ring-1 focus:ring-[#3aaa35]" type="text"/>
+     <button class="rounded bg-[#3aaa35] px-3 py-2 text-xs font-normal text-white" type="button">
+      Envío de imagen por correo
+     </button>
+    </div>
+   </form>
+   <!-- Timeline and images container -->
+   <section class="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto border border-gray-200 rounded-sm overflow-hidden">
+    <!-- Timeline -->
+    <div class="bg-[#e6e8ff] p-4 text-[10px] text-gray-700 timeline-scroll overflow-y-auto max-h-[400px]">
+     <div class="flex justify-between font-semibold border-b border-gray-300 pb-1 mb-2 text-[11px]">
+      <span>
+       MOVIMIENTO GUÍA
+      </span>
+      <span>
+       IMAGENES DE LA GUÍA
+      </span>
+     </div>
+     <div class="flex flex-col space-y-6 relative pl-6">
+      <!-- Vertical line -->
+      <div class="absolute top-0 left-3 h-full w-[2px] bg-[#3aaa35] opacity-50">
+      </div>
+      <!-- Timeline item 1 -->
+      <div class="flex items-start space-x-3 relative z-10">
+       <div class="flex flex-col items-center">
+        <div class="w-3 h-3 rounded-full border-2 border-[#3aaa35] bg-white mt-0.5">
+        </div>
+        <div class="flex-1 w-[2px] bg-[#3aaa35] opacity-50">
+        </div>
+       </div>
+       <div class="text-[10px] leading-tight">
+        <p class="text-gray-900 font-semibold text-[11px]">
+         30/04/2025
+         <br/>
+         18:58 pM
+        </p>
+        <p class="text-[#3aaa35] font-bold text-[11px] mt-1 leading-tight">
+         Generado en Agencia SC11 RIOBAMBA
+        </p>
+       </div>
+      </div>
+      <!-- Timeline item 2 -->
+     
+      <!-- Timeline item 3 -->
+      
+      <!-- Timeline item 4 
+      <div class="flex items-start space-x-3 relative z-10">
+       <div class="flex flex-col items-center">
+        <div class="w-3 h-3 rounded-full border-2 border-[#3aaa35] bg-white mt-0.5">
+        </div>
+        <div class="flex-1 w-[2px] bg-[#3aaa35] opacity-50">
+        </div>
+       </div>
+       <div class="text-[10px] leading-tight">
+        <p class="text-gray-900 font-normal text-[11px]">
+         13/06/2025
+         <br/>
+         18:00 pM
+        </p>
+        <p class="text-gray-700 text-[11px] mt-1 leading-tight">
+         Generado en Agencia SC11 RIOBAMBA
+        </p>
+       </div>
+      </div>-->
+
+      <!-- Timeline item 5 -->
+      
+     </div>
+    </div>
+    <!-- Images section -->
+    <div class="col-span-2 p-4 border-l border-gray-200">
+     <div class="flex space-x-2 mb-3">
+      <img alt="Etiqueta de guía de envío en blanco y negro con código de barras y texto" class="w-20 h-20 object-contain border border-gray-300" height="80" src="https://storage.googleapis.com/a1aa/image/2234077f-a7dc-47f1-4d90-7ce1eefc6e0b.jpg" width="80"/>
+      <img alt="Icono de mapa con marcador de ubicación amarillo sobre fondo blanco" class="w-20 h-20 object-contain border border-gray-300" height="80" src="https://storage.googleapis.com/a1aa/image/bc0efcd9-b10e-4c1f-c086-d1108a0f53cc.jpg" width="80"/>
+     </div>
+     <iframe allowfullscreen="" class="w-full h-[400px] border border-gray-300 rounded" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.927927927927!2d-79.9321556845703!3d-2.1393959999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d22b7a0a7a7a7%3A0x123456789abcdef!2sGuayaquil%2C%20Ecuador!5e0!3m2!1ses!2sus!4v1687000000000!5m2!1ses!2sus" title="Mapa de ubicación en Guayaquil, Ecuador con marcador rojo">
+     </iframe>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>
